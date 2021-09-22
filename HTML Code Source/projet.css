@@ -1,0 +1,598 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    font-size: 110px;
+    line-height: 120px;
+    margin-left: 1225px;
+    margin-top: -123px;
+}
+.carousel .changeHidden {
+
+    position: absolute;
+    font-size: 110px;
+    top: 0;
+    left: 0%;
+
+    height: 110px;
+    overflow: hidden;
+
+}
+
+
+.carousel .changeHidden .contenant {
+
+    position: relative;
+    animation: carousel 8s ease-in-out infinite;
+
+}
+
+
+.carousel .changeHidden .element {
+    display: block;
+    font-weight: 700;
+
+}
+
+
+@keyframes carousel {
+    0%, 20% {
+        transform: translateY(0);
+    }
+    25%, 45% {
+        transform: translateY(-120px);
+    }
+    50%, 70% {
+        transform: translateY(-240px);
+    }
+    75%, 95% {
+        transform: translateY(-360px);
+    }
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #191a1b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #474b4c;
+  border-radius: 20px;
+  border: 3px solid #191a1b;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-image: url('https://www.teahub.io/photos/full/20-209471_wallpapers-hd-forest-hd-desktop-wallpapers-amazing-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+.container-first {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
+}
+h1 span {
+    position: relative;
+}
+.container-btns {
+    position: relative;
+    top: 50px;
+}
+.btn-first {
+
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.btn-first:nth-child(1){
+    margin-right: 30px;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+.lignes {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1 {
+  font-weight: 700;
+  text-decoration: none;
+    width: 250px;
+    height: 3px;
+    background-image:linear-gradient(to right, #60a888, #60a888);
+    border-radius: 5px;
+}
+.l2 {
+  font-weight: 700;
+  text-decoration: none;
+    width: 140px;
+    height: 3px;
+    background-image:linear-gradient(to right, #60a888, #60a888);
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo {
+    position: absolute;
+    right: 2.9%;
+    top: 4%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.content{
+  background-image: repeating-linear-gradient(90deg, hsla(178,0%,66%,0.05) 0px, hsla(178,0%,66%,0.05) 1px,transparent 1px, transparent 104px),
+  repeating-linear-gradient(0deg, hsla(178,0%,66%,0.05) 0px, hsla(178,0%,66%,0.05) 1px,transparent 1px, transparent 104px),
+  repeating-linear-gradient(0deg, hsla(178,0%,66%,0.07) 0px, hsla(178,0%,66%,0.07) 1px,transparent 1px, transparent 26px),
+  repeating-linear-gradient(90deg, hsla(178,0%,66%,0.07) 0px, hsla(178,0%,66%,0.07) 1px,transparent 1px, transparent 26px),
+  linear-gradient(0deg, rgb(20,20,20),rgb(20,20,20));
+}
+
+
+.city-name{
+  border: 7px solid #white;
+  text-align: center;
+  margin-top: 230px;
+  margin-left: -700px;
+  color: white;
+}
+
+.country-name{
+  border: 7px solid #white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+  margin-left: -700px;
+  color: white;
+}
+
+.city-name1{
+  border: 7px solid #white;
+  text-align: center;
+  margin-top: -90px;
+  color: white;
+}
+
+.country-name1{
+  border: 7px solid #white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+  color: white;
+}
+
+.card{
+  margin-top: 3vh;
+}
+
+a:hover{
+    color:black;
+    opacity: .6;
+  }
+
+a{
+  color: white;
+  text-decoration: none;
+}
+.main{
+
+  padding-top: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.svg{
+  margin-left: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+
+.main .content .card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.main .content .card .left{
+  margin-left: 100px;
+  margin-top: 50px;
+  height: 350px;
+  width: 2000px;
+  flex: 0 0 30%;
+  padding: 40px;
+  color: #c6c491;
+}
+
+
+.main .content .card .left1{
+  margin-left: 100px;
+  margin-top: 190px;
+  height: 350px;
+  width: 100px;
+  flex: 0 0 30%;
+  padding: 40px;
+  color: #c6c491;
+}
+
+
+
+.main .content .card.right{
+  flex: 0 0 70%;
+  display: flex;
+}
+
+.main .content .card.right1{
+  flex: 0 0 70%;
+}
+
+.right:hover{
+  transition: 650ms ease;
+    opacity: 0.7;
+}
+.right1:hover{
+  transition: 650ms ease;
+    opacity: 0.7;
+}
+
+
+
+.main .content .card .right img{
+  border-collapse: separate;
+  border-radius: 20px;
+  overflow: hidden;
+   box-shadow: 0 5px 50px rgba(#f1f1f1,.85);
+  height: 515px;
+  width: 720px;
+  padding-top: 90px;
+  margin-top: -200px;
+  margin-left: -20px;
+}
+
+
+
+
+
+.main .content .card .right1 img{
+  overflow: hidden;
+   box-shadow: 0 5px 50px rgba(#f1f1f1,.85);
+  height: 515px;
+  width: 720px;
+  padding-top: 90px;
+  margin-top: 0px;
+  margin-left: -15px;
+  border-collapse: separate;
+  border-radius: 20px;
+  display: flex;
+}
+
+
+.main .content .card .left h1{
+  padding-top: 30px;
+    color:#9fc9bc;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.main .content .card .left1 h1{
+  padding-top: 30px;
+  color:#9fc9bc;
+  text-align: center;
+  font-size: 40px;
+
+
+}
+
+
+.main .content .card p{
+  font-size: 25px;
+  padding-top: 30px;
+  color: #c6c491;
+}
+
+
+.right{
+  display: flex;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.right1{
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+
+
+/*DEBUT FOOTER*/
+
+hr{
+  width: 100%;
+}
+
+
+.avantdernier{
+  background-image: repeating-linear-gradient(90deg, hsla(178,0%,66%,0.05) 0px, hsla(178,0%,66%,0.05) 1px,transparent 1px, transparent 104px),
+  repeating-linear-gradient(0deg, hsla(178,0%,66%,0.05) 0px, hsla(178,0%,66%,0.05) 1px,transparent 1px, transparent 104px),
+  repeating-linear-gradient(0deg, hsla(178,0%,66%,0.07) 0px, hsla(178,0%,66%,0.07) 1px,transparent 1px, transparent 26px),
+  repeating-linear-gradient(90deg, hsla(178,0%,66%,0.07) 0px, hsla(178,0%,66%,0.07) 1px,transparent 1px, transparent 26px),
+  linear-gradient(0deg, rgb(20,20,20),rgb(20,20,20));
+}
+
+
+.un{
+  font-size: 50px;
+  color: #474b4c;
+  padding-left: 820px;
+  padding-top: 150px;
+}
+
+.deux{
+  font-size: 50px;
+  color: black;
+  padding-left: 1055px;
+  margin-top:-59px;
+}
+
+.deux a{
+  color: #C6C491;
+}
+
+.deux a:hover{
+  color: #fce3e3;
+}
+
+.avantdernier img{
+  height: 30px;
+  width: 30px;
+  margin-left: 935px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dernier{
+  background-image: repeating-linear-gradient(90deg, hsla(178,0%,66%,0.05) 0px, hsla(178,0%,66%,0.05) 1px,transparent 1px, transparent 104px),
+  repeating-linear-gradient(0deg, hsla(178,0%,66%,0.05) 0px, hsla(178,0%,66%,0.05) 1px,transparent 1px, transparent 104px),
+  repeating-linear-gradient(0deg, hsla(178,0%,66%,0.07) 0px, hsla(178,0%,66%,0.07) 1px,transparent 1px, transparent 26px),
+  repeating-linear-gradient(90deg, hsla(178,0%,66%,0.07) 0px, hsla(178,0%,66%,0.07) 1px,transparent 1px, transparent 26px),
+  linear-gradient(0deg, rgb(20,20,20),rgb(20,20,20));
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    color: black;
+}
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 300px 0 10px;
+}
+
+.bloc {
+    width: 25%;
+}
+
+
+.footer-contact h3,
+.footer-services h3,
+.footer-horaires h3,
+.footer-medias h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+/*Services*/
+
+
+.services{
+  text-align: center;
+  color: #9FC9BC;
+}
+
+.liste-services a {
+  text-align: center;
+    text-decoration: none;
+    color:#C6C491;
+}
+
+.liste-services p{
+  text-align: center;
+  margin: 20px;
+}
+
+.liste-services a:hover {
+    color: #fce3e3;
+}
+
+/*appel*/
+
+.contact{
+  text-align: center;
+  color:   #9FC9BC;
+}
+
+.appel {
+  list-style-type: none;
+  padding-left: 70px;
+}
+
+.appel img {
+    width: 40px;
+    margin: 10px 10px;
+}
+
+.appel a{
+    text-decoration: none;
+  color:#C6C491;
+    display: flex;
+    align-items: center;
+    margin-left: -60px;
+}
+
+.appel a:hover{
+  color: #fce3e3;
+}
+
+/*horaires*/
+
+
+.horaire{
+  text-align: center;
+  color: #9FC9BC;
+}
+
+.liste-horaires{
+  text-align: center;
+  color:#C6C491;
+}
+.liste-horaires p{
+  text-align: center;
+  color:#C6C491;
+  margin: 20px;
+}
+
+/* Medias */
+
+
+.media{
+  text-align: center;
+  color: #9FC9BC;
+}
+
+.liste-media {
+  list-style-type: none;
+  padding-left: 70px;
+}
+
+.liste-media img {
+    width: 40px;
+    margin: 10px 10px;
+}
+
+.liste-media a {
+  text-align: center;
+    text-decoration: none;
+  color:#C6C491;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.liste-media a:hover{
+  color: #fce3e3;
+}
+
+
+
+
+.bouton{
+  height: 70px;
+  width: 70px;
+  background: #9FBFA8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom:20px;
+
+cursor: pointer;
+
+}
+
+.icone{
+  width: 50px;
+}
+
+
+.fin{
+  text-align: center;
+  color: #9FC9BC;
+  font-size: 10px;
+}
