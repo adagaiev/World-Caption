@@ -1,6 +1,6 @@
-Title of the project:
+TITLE OF THE PROJECT
 
-World Caption
+--->  World Caption
 
 
 
@@ -12,6 +12,8 @@ URL of the video on Youtube:
 
 
 DESCRIPTION:
+
+
 
 My project is simple: It is a website, with therefore HTML, CSS and Javascript,
 which aims to open the eyes to people about our climate.
